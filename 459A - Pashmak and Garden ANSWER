@@ -1,0 +1,35 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int ax,ay,bx,by;
+    cin>>ax>>ay>>bx>>by;
+    if(ay==by)
+    {
+        cout<<ax<<" "<<ay+(abs(ax-bx))<<" ";
+        cout<<bx<<" "<<by+(abs(ax-bx));
+        
+    }
+    else if(ax==bx){
+       cout<<ax+abs(ay-by)<<" "<<ay;
+       cout<<" "<<bx+abs(ay-by)<<" "<<by;
+    }
+    else{
+        if(abs(ax-bx)!=abs(ay-by))
+        {cout<<"-1";}
+        else
+        {
+
+                cout<<ax<<" "<<by<<" "<<bx<<" "<<ay;
+ 
+        }
+        
+        
+        
+    }
+    return 0;
+}
